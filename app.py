@@ -12,6 +12,16 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     return render_template('index.html')
+  
+  
+@app.route('/')
+def home():
+    return render_template('aboutus.html')
+  
+  
+@app.route('/')
+def home():
+    return render_template('testyourself.html')
 
 
 @app.route('/predict', methods=['POST'])
@@ -40,7 +50,7 @@ def predict():
             out = 'Oops, Danger you have to take care of yourself. You are Malignant'
         elif prediction[0][0] == 0:
             out = 'Great, you need not to worry. You are Benign'
-        return render_template('index.html', prediction_text='{}'.format(out))
+        return render_template('testyourself.html', prediction_text='{}'.format(out))
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -9,9 +9,6 @@ Deployed at: https://breast-cancer-pre.herokuapp.com/
 • Please do ⭐ the repository, if it helped you in anyway.
 
 ![](images/home.jpg)
-
 ![](images/test_1.jpg)
-
 ![](images/test_2.jpg)
-
 ![](images/about_us.jpg)
